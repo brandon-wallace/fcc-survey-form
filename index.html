@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>survey form</title>
+  </head>
+  <body>
+
+    <article>
+
+      <h1 id="title">SURVEY FORM</h1>
+
+      <div class="description">
+        <p id="description">This questionnaire is part of a study of computer usage. Your participation in this study is voluntary, and your answers will form part of a statistical study and will not identify you as an individual.</p>
+      </div>
+
+      <form id="survey-form">
+
+        <label id="name-label" for="name">Name:
+          <input type="text" id="name" name="name" placeholder="Enter Name" required>
+        </label>
+        <label id="email-label" for="email">Email:
+          <input type="email" id="email" name="email" placeholder="Enter Email" pattern=".*@.*" required>
+        </label>
+        <label id="number-label" for="number">Number:
+          <input type="number" id="number" name="number" placeholder="Select Age" min="1" max="100">
+        </label>
+
+        <p id="skill-level">Skill Level</p>
+        <select id="dropdown" class="spacer">
+          <option value="" disabled>Skill Level</option>
+          <option value="noob">No knowledge</option>
+          <option value="noob">Noob</option>
+          <option value="haxor">Haxor</option>
+          <option value="guru">Guru</option>
+        </select>
+
+        <p id="favorite-os">Which is your favorite OS?</p>
+        <label><input type="radio" name="os" value="linux">GNU/Linux</label>
+        <label><input type="radio" name="os" value="macos">Mac OS</label>
+        <label><input type="radio" name="os" value="windows">Windows</label>
+        <label><input type="radio" name="os" value="freebsd">FreeBSD</label>
+
+        <p id="hardware">Which hardware do you own?</p>
+        <ul class="hardware-list">
+          <li><label><input type="checkbox" name="hardware" value="2">Desktop</label></li>
+          <li><label><input type="checkbox" name="hardware" value="1">Laptop</label></li>
+          <li><label><input type="checkbox" name="hardware" value="3">Mini-PC</label></li>
+          <li><label><input type="checkbox" name="hardware" value="4">Server</label></li>
+          <li><label><input type="checkbox" name="hardware" value="5">Single Board Computer</label></li>
+        </ul>
+
+        <textarea name="" id="" placeholder="Additional Details" cols="30" rows="10"></textarea>
+
+        <button type="submit" id="submit">SUBMIT</button>
+      </form>
+
+    </article>
+
+    <footer>
+      <p>created by <a href="https://brandonwallace.cc">brandon wallace</a></p>
+    </footer>
+
+  </body>
+</html>
