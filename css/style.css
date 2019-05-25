@@ -1,5 +1,7 @@
 :root {
   --orange: hsl(26, 92%, 50%);
+  --orange-dark: hsl(26, 98%, 41%);
+  --dark-dark-blue: hsl(245, 66%, 23%);
 }
 
 html,
@@ -42,6 +44,9 @@ li {
 
 article {
   min-height: 965px;
+  background: url('../images/survey.png');
+  background-repeat: no-repeat;
+  background-position: left top;
 }
 
 #title {
@@ -49,14 +54,17 @@ article {
   font-size: 4rem;
   text-align: center;
   color: var(--orange);
-  text-shadow: 1px 1px 0 #1B1464,
-              2px 2px 0 #1B1464,
-              3px 3px 0 #1B1464,
-              4px 4px 0 #1B1464,
-              5px 5px 0 var(--orange),
-              6px 6px 0 var(--orange),
-              7px 7px 0 #1B1464,
-              8px 8px 0 #1B1464;
+  text-shadow: 1px 1px 0 var(--dark-dark-blue),
+              2px 2px 0 var(--dark-dark-blue),
+              3px 3px 0 var(--dark-dark-blue),
+              4px 4px 0 var(--dark-dark-blue),
+              5px 5px 0 var(--orange-dark),
+              6px 6px 0 var(--orange-dark),
+              7px 7px 0 var(--orange-dark),
+              8px 8px 0 var(--orange-dark),
+              9px 9px 0 var(--dark-dark-blue),
+              10px 10px 0 var(--dark-dark-blue),
+              11px 11px 0 var(--dark-dark-blue);
 }
 
 .description {
@@ -137,9 +145,9 @@ button {
   border-bottom: 4px solid #232323;
   border-left: 2px solid #232323;
   text-shadow: -1px -1px 0 #DDDDDD;
-  background-color: hsl(205, 79%, 52%);
-  -webkit-box-shadow: inset -4px -4px 0 hsl(205, 92%, 36%);
-          box-shadow: inset -4px -4px 0 hsl(205, 92%, 36%);
+  background-color: var(--orange);
+  -webkit-box-shadow: inset -4px -4px 0 var(--orange-dark);
+          box-shadow: inset -4px -4px 0 var(--orange-dark);
 }
 
 button:hover {
