@@ -1,35 +1,38 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Questrial&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato|Questrial&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>survey form</title>
   </head>
+
   <body>
+    <div class="page-background">
 
     <article>
 
-      <h1 id="title">SURVEY FORM</h1>
+      <h1 class="title">SURVEY FORM</h1>
 
       <div class="description">
-        <p id="description">This questionnaire is part of a study of computer usage. Your participation in this study is voluntary, and your answers will form part of a statistical study and will not identify you as an individual.</p>
+        <p class="description__text">This questionnaire is part of a study of computer usage. Your participation in this study is voluntary, and your answers will form part of a statistical study and will not identify you as an individual.</p>
       </div>
 
-      <form id="survey-form">
+      <form class="survey-form">
 
-        <label id="name-label" for="name">Name:
+        <label class="name-label" for="name">Name:
           <input type="text" id="name" name="name" placeholder="Enter Name" required>
         </label>
-        <label id="email-label" for="email">Email:
+        <label class="email-label" for="email">Email:
           <input type="email" id="email" name="email" placeholder="Enter Email" pattern=".*@.*" required>
         </label>
-        <label id="number-label" for="number">Number:
+        <label class="number-label" for="number">Number:
           <input type="number" id="number" name="number" placeholder="Select Age" min="1" max="100">
         </label>
 
-        <p id="skill-level">Skill Level</p>
+        <p class="skill-level">Skill Level</p>
         <select id="dropdown" class="spacer">
           <option value="" disabled>Skill Level</option>
           <option value="noob">No knowledge</option>
@@ -38,13 +41,13 @@
           <option value="guru">Guru</option>
         </select>
 
-        <p id="favorite-os">Which is your favorite OS?</p>
+        <p class="favorite-os">Which is your favorite OS?</p>
         <label><input type="radio" name="os" value="linux">GNU/Linux</label>
         <label><input type="radio" name="os" value="macos">Mac OS</label>
         <label><input type="radio" name="os" value="windows">Windows</label>
         <label><input type="radio" name="os" value="freebsd">FreeBSD</label>
 
-        <p id="hardware">Which hardware do you own?</p>
+        <p class="hardware">Which hardware do you own?</p>
         <ul class="hardware-list">
           <li><label><input type="checkbox" name="hardware" value="2">Desktop</label></li>
           <li><label><input type="checkbox" name="hardware" value="1">Laptop</label></li>
@@ -55,14 +58,16 @@
 
         <textarea name="" id="" placeholder="Additional Details" cols="30" rows="10"></textarea>
 
-        <button type="submit" id="submit">SUBMIT</button>
-      </form>
+        <button type="submit" class="submit">SUBMIT</button>
+    </form><!-- END form -->
 
-    </article>
+    </article><!-- END article -->
 
     <footer>
-      <p>created by <a href="https://brandonwallace.cc">brandon wallace</a></p>
-    </footer>
+      <p class="footer-text">created by <a  class="footer-link" href="https://brandonwallace.cc">brandon wallace</a></p>
+    </footer><!-- END footer -->
 
-  </body>
+    </div>
+</body><!-- END body -->
+
 </html>
